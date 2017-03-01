@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.skyeng.skyengtest.LoginActivity">
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/enter_code_phone"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_default_size" />
+
+    <EditText
+        android:id="@+id/codeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:hint="@string/code"
+        android:lines="1"
+        android:inputType="number"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_default_size" />
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:text="@string/enter"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/big_margin"
+        android:background="@drawable/button_click_background"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_big_size" />
+
+    <Button
+        android:id="@+id/resendCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:text="@string/resend_code"
+        android:layout_marginTop="@dimen/default_margin"
+        android:enabled="false"
+        android:background="@null"
+        android:textColor="@color/blue_light"
+        android:textSize="@dimen/text_big_size" />
+
+
+</LinearLayout>
